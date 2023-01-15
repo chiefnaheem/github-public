@@ -1,7 +1,9 @@
+import { RepositoryDetail } from "../components/RepositoryDetail";
+
 export const RepositoryDetailPage: React.FC = () => {
-    return (
+  return (
     <div className="bg-gray-200 p-4">
-    <RepositoryDetail />
+      <RepositoryDetail />
     </div>
-    );
-    };
+  );
+};
