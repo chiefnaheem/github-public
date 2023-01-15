@@ -21,3 +21,18 @@ export interface SearchPageState {
   repositories: Repository[];
   pagination: Pagination;
 }
+
+export interface RepositoryDetail {
+  name: string;
+  author: string;
+  stars: number;
+  watchers: number;
+  forks: number;
+  openIssues: number;
+  defaultBranch: string;
+  lastUpdate: string;
+}
+
+export interface RepositoryParams {
+  name: string;
+}

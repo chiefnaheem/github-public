@@ -3,7 +3,7 @@ import { RepositoryList } from "../components/RepositoryList";
 import { SearchBar } from "../components/SearchBar";
 import { useSearchPage } from "../hooks/hooks";
 
-const SearchPage: React.FC = () => {
+export const SearchPage: React.FC = () => {
   const { resultsPerPage, handleResultsPerPage } = useSearchPage();
 
   return (
