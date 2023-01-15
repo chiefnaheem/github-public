@@ -1,4 +1,4 @@
-import { useSearchPage } from "../hooks/app.hook";
+import { useSearchPage } from "../hooks/hooks";
 
 const RepositoryList: React.FC = () => {
   const { repositories, handleRepositoryClick } = useSearchPage();

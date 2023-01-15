@@ -1,3 +1,5 @@
+import { useSearchPage } from "../hooks/hooks";
+
 const Pagination: React.FC = () => {
   const { pagination } = useSearchPage();
 
