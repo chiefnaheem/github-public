@@ -1,6 +1,6 @@
 import { useSearchPage } from "../hooks/hooks";
 
-const SearchBar: React.FC = () => {
+export const SearchBar: React.FC = () => {
   const { searchString, sortCriteria, handleSearch, handleSort } =
     useSearchPage();
 

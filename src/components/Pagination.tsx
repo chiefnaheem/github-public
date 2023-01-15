@@ -1,6 +1,6 @@
 import { useSearchPage } from "../hooks/hooks";
 
-const Pagination: React.FC = () => {
+export const Pagination: React.FC = () => {
   const { pagination } = useSearchPage();
 
   return (
@@ -13,9 +13,6 @@ const Pagination: React.FC = () => {
       </div>
       <button
         className="bg-blue-500 text-
-    
-    
-    
     white p-2 rounded-lg hover:bg-blue-600"
       >
         Next
