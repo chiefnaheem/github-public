@@ -8,6 +8,7 @@ import {
   setRepositories,
   setPagination,
 } from "../slices/searchPageSlice";
+import { RootState } from "../store/store";
 
 export function useSearchPage() {
   const searchString = useSelector(
@@ -57,7 +58,7 @@ export function useSearchPage() {
   };
 
   const handleResultsPerPage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    dispatch(setResultsPerPage(e.currentTarget.value));
+    dispatch(setResultsPerPage(+e.currentTarget.value));
   };
 
   const handleRepositoryClick = (name: string) => {

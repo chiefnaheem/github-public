@@ -4,7 +4,7 @@ import { RepositoryDetailPage } from './pages/RepositoryDetails';
 import { SearchPage } from './pages/SearchPage';
 import store from './store/store';
 
-export default App: React.FC = () => {
+const App: React.FC = () => {
   return (
     <Provider store={store}>
       <Router>
@@ -16,3 +16,4 @@ export default App: React.FC = () => {
     </Provider>
   );
 };
+export default App;
