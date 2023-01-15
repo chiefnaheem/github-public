@@ -7,7 +7,7 @@ import {
     setResultsPerPage,
     setRepositories,
     setPagination,
-  } from './searchPageSlice';
+  } from '../slices/searchPageSlice';
   
   export function useSearchPage() {
     const searchString = useSelector((state: RootState) => state.searchPage.searchString);
