@@ -1,9 +1,11 @@
+import { useSearchPage } from "../hooks/app.hook";
+
 const RepositoryList: React.FC = () => {
   const { repositories, handleRepositoryClick } = useSearchPage();
 
   return (
     <div className="mt-4">
-      {repositories.map((repository) => (
+      {repositories.map((repository: any) => (
         <div key={repository.name} className="bg-white p-4 rounded-lg mb-2">
           <div className="text-lg font-medium">{repository.name}</div>
           <div className="text-gray-500">{repository.author}</div>
