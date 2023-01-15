@@ -13,3 +13,11 @@ export interface Pagination {
   resultsPerPage: number;
   totalPages: number;
 }
+
+export interface SearchPageState {
+  searchString: string;
+  sortCriteria: string;
+  resultsPerPage: number;
+  repositories: Repository[];
+  pagination: Pagination;
+}
